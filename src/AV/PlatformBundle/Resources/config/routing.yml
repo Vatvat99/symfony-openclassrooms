@@ -1,0 +1,31 @@
+av_platform_home:
+    path:    /{page}
+    defaults: { _controller: AVPlatformBundle:Advert:index, page: 1 }
+    requirements:
+        page: \d*
+
+av_platform_view:
+    path:    /advert/{id}
+    defaults: { _controller: AVPlatformBundle:Advert:view }
+    requirements:
+        page: \d+
+
+av_platform_add:
+    path:     /add
+    defaults: { _controller: AVPlatformBundle:Advert:add }
+
+av_platform_edit:
+    path:     /edit/{id}
+    defaults: { _controller: AVPlatformBundle:Advert:edit }
+    requirements:
+        id: \d+
+
+av_platform_delete:
+    path:     /delete/{id}
+    defaults: { _controller: AVPlatformBundle:Advert:delete }
+    requirements:
+        id: \d+
+
+av_platform_test:
+    path:     /test
+    defaults: { _controller: AVPlatformBundle:Advert:test }

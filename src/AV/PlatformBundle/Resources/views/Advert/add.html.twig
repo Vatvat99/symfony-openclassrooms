@@ -1,0 +1,10 @@
+{%  extends 'AVPlatformBundle::layout.html.twig' %}
+
+{% block title %}
+    Ajouter une annonce - {{ parent() }}
+{% endblock %}
+
+{% block avplatform_body %}
+    <h2>Ajouter une annonce</h2>
+    {{ include('AVPlatformBundle:Advert:form.html.twig') }}
+{% endblock %}
